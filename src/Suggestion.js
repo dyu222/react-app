@@ -14,7 +14,7 @@ class Suggestion extends React.Component {
     }
 
     requeryPost() {
-        fetch(`/api/following/${this.state.suggestion.id}`, {
+        fetch(`https://photo-app-secured.herokuapp.com/api/following/${this.state.suggestion.id}`, {
                 headers: getHeaders()
             })
             .then(response => response.json())

@@ -21,7 +21,7 @@ class NavBar extends React.Component {
 
     // This task requires that you fetch data from the /api/profile endpoint.
     fetchProf(){
-        fetch(`/api/profile/`, {
+        fetch(`https://photo-app-secured.herokuapp.com/api/profile/`, {
                 // method: 'GET',
                 headers: getHeaders()
             })

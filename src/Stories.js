@@ -17,7 +17,7 @@ class Stories extends React.Component {
         console.log('Stories component mounted');
     }
     fetchStories(){
-        fetch(`/api/stories/`, {
+        fetch(`https://photo-app-secured.herokuapp.com/api/stories/`, {
                 // method: 'GET',
                 headers: getHeaders()
             })

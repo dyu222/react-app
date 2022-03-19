@@ -28,7 +28,7 @@ class FollowButton extends React.Component {
         console.log('code to follow the user', this.props.userId);
         const userId = this.props.userId;
         // issue fetch request and then afterwards requery for the post:
-        fetch(`/api/following`, {
+        fetch(`https://photo-app-secured.herokuapp.com/api/following`, {
             headers: getHeaders(),
             method: 'POST',
             body: JSON.stringify({user_id: userId})
@@ -47,7 +47,7 @@ class FollowButton extends React.Component {
         console.log('code to unfollow the user');
         // issue fetch request and then afterwards requery for the post:
         // pretty sure we need followId not userId but havent defined that anywhere yet
-        fetch(`/api/following/${this.state.followingId}`, {
+        fetch(`https://photo-app-secured.herokuapp.com/api/following/${this.state.followingId}`, {
             headers: getHeaders(),
             method: 'DELETE',
         })
